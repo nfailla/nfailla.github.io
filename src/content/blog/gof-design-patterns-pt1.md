@@ -1,0 +1,94 @@
+---
+title: "GoF's Design Patterns (part 1)"
+description: 'Notes from Chapter 1 (part 1)'
+pubDate: 'Sep 03 2023'
+# heroImage: '/hero-gof-design-patterns.jpg'
+---
+
+In the **preface**, the authors state that "[Design Patterns] might take a little more work than _ad hoc_ solutions. But the extra effort invariably pays dividends in increased flexibility **and** reusability."
+
+I've stressed "flexibility **and** reusability" because I've seen (and designed myself) code that, while certainly increases reusability, **reduces** flexibility. As far as I know, that could happen mainly because of two reasons:
+
+1. Early abstractions. In an effort for refactoring soon, sometimes one might end up abstracting way too much, taking for certain some assumptions too early.
+2. Use of anti-patterns. I think they require a constant effort to be catched as we tend to develop them ourselves, if we don't learn from our own mistakes.
+
+Reusability without flexibility is, in general, a design anti-pattern.
+
+---
+
+I think that, in most cases, implementing patterns wouldn't worth it when prototyping, due to that extra boilerplate needed to achieve a most probably unneeded flexibility.
+
+In the same sense, I think I wouldn't start out implementing a pattern before the actual need for it arises.
+
+---
+
+In the **foreword** [Grady Booch](https://en.wikipedia.org/wiki/Grady_Booch), says the following:
+
+> All well-structured object-oriented architectures are full of patterns. Indeed, one of the ways that I measure the quality of an object-oriented system is to judge whether or not its developers have paid careful attention to the **common collaborations among its objects**.
+
+Emphasis mine. 
+
+---
+
+> In short, the concept of the design pattern in software provides a key to helping developers leverage the expertise of other skilled architects.
+
+I think this is key. Design atterns not only help build a common language but also helps **experience reuse**.
+
+---
+
+> Yet experienced object-oriented designers do make good designs. Meanwhile new designers are overwhelmed by the options available and tend to fall back on non-object-oriented techniques they’ve used before.
+
+It's very common to see imperative solutions in Object Oriented code. Sometimes it could be good enough. Some other times, I think it might be a symptom of what the authors mention: falling back to something more well-known.
+
+---
+
+> One thing expert designers know not to do is solve every problem from first principles. Rather, they reuse solutions that have worked for them in the past.
+
+The more experienced the designer is, the easier they find straight-forward, simple solutions. Less experienced developers tend to reinvent the wheel more frequently.
+
+---
+
+> Once you know the pattern, a lot of design decisions follow automatically.
+
+So, an additional unmentioned benefit of using design patterns is productivity. Having solved some design decisions easily, you can focus more on solving the problem than on the implementation.
+
+---
+<!-- 
+## Creational, Structural & Behavioral Patterns
+
+> Creational patterns concern the process of object creation. Structural patterns deal with the composition of classes or objects. Behavioral patterns characterize the ways in which classes or objects interact and distribute responsibility.
+
+---
+
+## Class & Object Patterns
+
+> Class patterns deal with relationships between classes and their subclasses. These relationships are established through inheritance, so they are static—fixed at compile-time.
+
+---
+
+> Object patterns deal with object relationships, which can be changed at run-time and are more dynamic.
+
+---
+
+## Other stuff
+
+> Object-oriented designs often end up with classes that have no counterparts in the real world. (...) Strict modeling of the real world leads to a system that reflects today’s realities but not necessarily tomorrow’s. The abstractions that emerge during design are key to making a design flexible. (...) For example, objects that represent a process or algorithm don’t occur in nature, yet they are a crucial part of flexible designs.
+
+## Types
+
+> An object may have many types, and widely different objects can share a type.
+
+---
+
+> Part of an object’s interface may be characterized by one type, and other parts by other types.
+
+---
+
+> Two objects of the same type need only share parts of their interfaces.
+
+---
+
+> Interfaces can contain other interfaces as subsets.
+
+---
+ -->
