@@ -22,37 +22,35 @@ In the same sense, I think I wouldn't start out implementing a pattern before th
 
 ---
 
-In the **foreword** [Grady Booch](https://en.wikipedia.org/wiki/Grady_Booch), says the following:
-
-> All well-structured object-oriented architectures are full of patterns. Indeed, one of the ways that I measure the quality of an object-oriented system is to judge whether or not its developers have paid careful attention to the **common collaborations among its objects**.
-
-Emphasis mine. 
+In the **foreword** [Grady Booch](https://en.wikipedia.org/wiki/Grady_Booch), says: "All well-structured object-oriented architectures are full of patterns. Indeed, one of the ways that I measure the quality of an object-oriented system is to judge whether or not its developers have paid careful attention to the **common collaborations among its objects**". Emphasis mine.
 
 ---
 
-> In short, the concept of the design pattern in software provides a key to helping developers leverage the expertise of other skilled architects.
+> In short, the concept of the design pattern in software provides a key to helping developers leverage the expertise of other skilled architects.<br/>
+> — <cite>Grady Booch</cite>
 
-I think this is key. Design atterns not only help build a common language but also helps **experience reuse**.
+I think this is key. Design patterns not only help build a common language but also unlock **experience reuse**.
 
 ---
 
 > Yet experienced object-oriented designers do make good designs. Meanwhile new designers are overwhelmed by the options available and tend to fall back on non-object-oriented techniques they’ve used before.
 
-It's very common to see imperative solutions in Object Oriented code. Sometimes it could be good enough. Some other times, I think it might be a symptom of what the authors mention: falling back to something more well-known.
+It's very common to see imperative solutions in object-oriented code. Sometimes it could be good enough. But imperative code is less flexible, less readable, and transparent in intent. You have to understand the guts of the code in order to know what its intent is.
 
 ---
 
-> One thing expert designers know not to do is solve every problem from first principles. Rather, they reuse solutions that have worked for them in the past.
+> One thing expert designers know _not_ to do is solve every problem from first principles. Rather, they reuse solutions that have worked for them in the past. (...) Such experience is part of what makes them experts.
 
 The more experienced the designer is, the easier they find straight-forward, simple solutions. Less experienced developers tend to reinvent the wheel more frequently.
 
 ---
 
-> Once you know the pattern, a lot of design decisions follow automatically.
-
-So, an additional unmentioned benefit of using design patterns is productivity. Having solved some design decisions easily, you can focus more on solving the problem than on the implementation.
+> Once you know the pattern, a lot of design decisions follow automatically. (...) Put simply, design patterns help a designer get a design "right" faster.
 
 ---
+
+
+
 <!-- 
 ## Creational, Structural & Behavioral Patterns
 
