@@ -2,7 +2,7 @@
 title: "GoF's Design Patterns (part 1)"
 description: 'Notes from Chapter 1 (part 1)'
 pubDate: 'Sep 03 2023'
-# heroImage: '/hero-gof-design-patterns.jpg'
+heroImage: '/hero-gof-design-patterns-pt1.jpg'
 ---
 
 In the **preface**, the authors state that "[Design Patterns] might take a little more work than _ad hoc_ solutions. But the extra effort invariably pays dividends in increased flexibility **and** reusability."
@@ -13,6 +13,45 @@ I've stressed "flexibility **and** reusability" because I've seen (and designed 
 2. Use of anti-patterns. I think they require a constant effort to be catched as we tend to develop them ourselves, if we don't learn from our own mistakes.
 
 Reusability without flexibility is, in general, a design anti-pattern.
+
+---
+
+What is a design pattern? The authors start out with a quote by the architect [Christopher Alexander](https://en.wikipedia.org/wiki/Christopher_Alexander):
+
+> Each pattern describes a problem which occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice.
+<!-- 
+A pattern has four essential elements:
+1. The **pattern name**.
+2. The **problem**, describing when to apply the pattern.
+3. The **solution**, an abstract description on how to arrange classes and objects in order to solve an abstract design problem.
+4. The **consequences**, which are the results and trade-offs of applying the pattern. -->
+
+---
+
+## The catalog
+
+The authors organize the patterns based on two criteria: **purpose** (creational, structural and behavioral) and **scope** (class and object).
+
+In the scope of **class**, the patterns are:
+
+| **Creational**     | **Structural**     | **Behavioral**            |
+| ------------------ | ------------------ | ------------------------- |
+| `Factory Method`   | `Adapter (class)`  | `Interpreter`             |
+|                    |                    | `Template Method`         |
+
+While the **object patterns** are:
+
+| **Creational**     | **Structural**     | **Behavioral**            |
+| ------------------ | ------------------ | ------------------------- |
+| `Abstract Factory` | `Adapter (object)` | `Chain of Responsibility` |
+| `Builder`          | `Bridge`           | `Command`                 |
+| `Prototype`        | `Composite`        | `Iterator`                |
+| `Singleton`        | `Decorator`        | `Mediator`                |
+|                    | `Facade`           | `Memento`                 |
+|                    | `Flyweight`        | `Observer`                |
+|                    | `Proxy`            | `State`                   |
+|                    |                    | `Strategy`                |
+|                    |                    | `Visitor`                 |
 
 ---
 
