@@ -53,6 +53,10 @@ While the **object patterns** are:
 |                    |                    | `Strategy`                |
 |                    |                    | `Visitor`                 |
 
+**Class patterns** deal with relationships between classes and their subclasses. As these relationships are established through inheritance, they are **static**.
+
+On the other hand, **object patterns** deal with object relationships, which are **dynamic**.
+
 ---
 
 I think that, in most cases, implementing patterns wouldn't worth it when prototyping, due to that extra boilerplate needed to achieve a most probably unneeded flexibility.
